@@ -1,0 +1,22 @@
+[theme]
+primaryColor = "#22d3ee"              # Warna aksen (tombol, link, elemen interaktif)
+backgroundColor = "#0a0e1a"           # Warna latar belakang utama (gelap)
+secondaryBackgroundColor = "#1a2035"  # Warna latar sidebar & area sekunder
+textColor = "#e2e8f0"                # Warna teks (terang agar kontras)
+
+[server]
+headless = true                       # Agar bisa jalan di cloud tanpa browser lokal
+```
+
+Tanpa file ini, Streamlit akan menggunakan tema default (putih terang). Dengan file ini, aplikasi langsung tampil dalam mode gelap yang konsisten di semua perangkat.
+
+## Cara Upload ke GitHub (Termasuk Folder `.streamlit/`)
+
+Struktur yang harus ada di repository GitHub Anda:
+```
+simulasi-speech-to-text/          ← nama repository
+├── app.py
+├── requirements.txt
+├── README.md
+└── .streamlit/                   ← folder ini WAJIB ada
+    └── config.toml
